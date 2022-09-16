@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+// import React  from "react";
+import Header from "./components/Header";
 
-function App() {
+
+//  function App() {
+// // const name = 'Brad'// javascript direct
+// // const x = false
+
+const App =() => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+       <Header/> 
+        {/* <Header title={1}/> */}
+
+      {/* <Header/> */}
+      {/* top this header is retrun title from index.html */}
+     {/* <h1> Hello From React</h1> */}
+     {/* <h2>Hello{ x ? 'yes':'No'}</h2> //javascript  */}
     </div>
-  );
+  )
 }
 
+// class App extends React.Component{
+//   render(){
+//     return <h1>Hello from a class</h1>
+//   }
+// }
 export default App;
